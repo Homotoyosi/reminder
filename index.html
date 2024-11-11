@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set a Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="reminder-container">
+  <h2>Set a Reminder</h2>
+  <p>Get notified before your subscription renews.</p>
+
+  <form>
+    <!-- Reminder Date Section -->
+    <label for="reminder-date">Reminder Date:</label>
+    <input type="date" id="reminder-date" name="reminder-date">
+
+    <!-- Reminder Time Section -->
+    <label for="reminder-time">Reminder Time:</label>
+    <input type="time" id="reminder-time" name="reminder-time">
+
+    <!-- Notification Method Section -->
+    <label for="notification-method">Notification Method:</label>
+    <select id="notification-method" name="notification-method">
+      <option value="email">Email</option>
+      <option value="sms">SMS</option>
+      <option value="push">Push Notification</option>
+    </select>
+
+    <!-- Optional Note Section -->
+    <label for="note">Add a Note:</label>
+    <textarea id="note" name="note" rows="3" placeholder="e.g., Annual Subscription Reminder"></textarea>
+
+    <!-- Enable/Disable Reminder Toggle -->
+    <div class="toggle-container">
+      <label for="enable-reminder">Enable Reminder:</label>
+      <input type="checkbox" id="enable-reminder" name="enable-reminder" checked>
+    </div>
+
+    <!-- Save Button -->
+    <button type="submit" class="save-btn">Save Reminder</button>
+  </form>
+
+</div>
+
+</body>
+</html>
